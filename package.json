@@ -1,0 +1,43 @@
+{
+  "name": "@jmgayosso/nbv-client-api",
+  "version": "0.0.1",
+  "description": "Client API that handles calls and queries to interact with NBV pallet",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "DOTENV_CONFIG_PATH=./.env.test jest --setupFiles dotenv/config --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "resolutions": {
+    "web-encoding": "1.1.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.18.13",
+    "@babel/preset-env": "^7.18.10",
+    "@types/jest": "^29.0.0",
+    "babel-jest": "^29.0.1",
+    "dotenv": "^16.0.2",
+    "eslint": "^8.23.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.5",
+    "eslint-plugin-promise": "^6.0.1",
+    "jest": "^28.1.3",
+    "jest-environment-jsdom": "^29.0.1",
+    "jest-localstorage-mock": "^2.4.22"
+  },
+  "dependencies": {
+    "@polkadot/api": "^9.2.4",
+    "@polkadot/extension-dapp": "^0.44.4",
+    "@polkadot/keyring": "^10.1.3",
+    "@smontero/hashed-confidential-docs": "^0.1.8",
+    "@types/jsdom": "^20.0.0",
+    "agent-base": "^6.0.2",
+    "cross-fetch": "^3.1.5",
+    "find-process": "^1.4.7",
+    "ipfs-http-client": "^57.0.3",
+    "stream-browserify": "^3.0.0"
+  }
+}
