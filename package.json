@@ -1,7 +1,7 @@
 {
-  "name": "@jmgayosso/nbv-client-api",
+  "name": "@jmgayosso/marketplace-client-api",
   "version": "0.0.1",
-  "description": "Client API that handles calls and queries to interact with NBV pallet",
+  "description": "Client API that handles calls and queries to interact with GreatedMarketplace pallet",
   "main": "src/index.js",
   "scripts": {
     "test": "DOTENV_CONFIG_PATH=./.env.test jest --setupFiles dotenv/config --watch"
