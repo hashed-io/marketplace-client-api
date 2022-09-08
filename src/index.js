@@ -1,5 +1,5 @@
-const { NbvStorageApi } = require('../src/model/polkadot-pallets')
+const { MarketplaceApi } = require('../src/model/polkadot-pallets')
 
 module.exports = {
-  NbvStorageApi
+  MarketplaceApi
 }
