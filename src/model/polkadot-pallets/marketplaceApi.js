@@ -315,20 +315,6 @@ class MarketplaceApi extends BasePolkadot {
   }
 
   /**
-   * @name getMarketplacesByAuthority
-   * @description Get marketplaces by account
-   * @param {String} accountId User polkadot address
-   * @param {Function} marketplaceId Marketplace id
-   */
-  async getMarketplacesByAuthority ({ accountId, marketplaceId }, subTrigger) {
-    const marketplaceAuthority = await this.exQuery('marketplacesByAuthority', [accountId, marketplaceId], subTrigger)
-    if (marketplaceAuthority.isEmpty) {
-      return undefined
-    }
-    return marketplaceAuthority.toHuman()
-  }
-
-  /**
    * The following function is used by the Custodian Page
    * The functionality is to get the files guarded by the account
    * @param {Address} Account

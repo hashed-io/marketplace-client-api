@@ -78,12 +78,6 @@ describe('Execute queries', () => {
     expect(application).toBe(undefined)
   })
 
-  test('Get Marketplaces By Authority', async () => {
-    // Error al ejecutarse
-    const marketplaces = await marketplaceApi.getMarketplacesByAuthority({ accountId, marketplaceId: marketId })
-    console.log({ marketplaces })
-  })
-
   test('Get Applications By Custodian', async () => {
     const applications = await marketplaceApi.getApplicationsByCustodian({ account: accountId })
     const isArray = Array.isArray(applications)
